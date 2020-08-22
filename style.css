@@ -1,1 +1,12 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 93vh;
+}
+/*# sourceMappingURL=style.css.map */
