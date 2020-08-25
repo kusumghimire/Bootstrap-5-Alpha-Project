@@ -283,9 +283,9 @@
           <h1>Check Out Our Projects</h1>
           <p>Never give up on something that you can't go a do without </p>
           <a href="https://www.youtube.com/embed/tgbNymZ7vqY" target="_">
-            <button type="button" class="btn btn-outline-info">Check Here <svg width="1em" height="1em"
-                viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg">
+            <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal">Check
+              Here <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle"
+                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                 <path fill-rule="evenodd"
                   d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z" />
@@ -293,17 +293,61 @@
               </svg></button>
           </a>
         </div>
-
       </div>
     </div>
   </section>
-   <!-- Contact Us Section starts from here -->
-   <section class="main_heading my-5">
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Us Section starts from here -->
+  <section class="main_heading my-5">
     <div class="text-center">
-      <h1 class="display-4">About Us</h1>
+      <h1 class="display-4">Contact Us</h1>
       <hr class="w-25 mx-auto">
     </div>
-    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-xxl-8 col-10 col-md-8 mx-auto">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
 
   <!-- Optional JavaScript -->
   <!-- Popper.js first , then Bootstrap JS -->
